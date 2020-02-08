@@ -1,6 +1,6 @@
 <label for="file">load file: <input id="file" type="file" #file></label>
 <button id="upload" #uploadBtn>Upload</button>
 <button id="cancel" #cancelBtn>Cancel</button>
-<div id="progress-bar" [style.width]="(progressBarWidth | async) + '%'"
+<div id="progress-bar" [style.width]="(uploadProgress | async) + '%'"
      style="height: 2rem; background-color: aquamarine;">
 </div>
