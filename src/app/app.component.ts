@@ -13,9 +13,9 @@ export class AppComponent implements AfterViewInit, OnDestroy {
   private inputEvent: Subscription;
   public progressBarWidth = new BehaviorSubject<number>(0);
 
-  @ViewChild('file', { static: true }) input: ElementRef;
-  @ViewChild('uploadBtn', { static: true }) uploadBtn: ElementRef;
-  @ViewChild('cancelBtn', { static: true }) cancelBtn: ElementRef;
+  @ViewChild('file', { static: false }) input: ElementRef;
+  @ViewChild('uploadBtn', { static: false }) uploadBtn: ElementRef;
+  @ViewChild('cancelBtn', { static: false }) cancelBtn: ElementRef;
 
   constructor(private http: HttpClient) {}
 
